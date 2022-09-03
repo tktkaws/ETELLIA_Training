@@ -1,3 +1,98 @@
+@use './modules/index';
+@use './modules/_destyle.css';
+
 @charset "UTF-8";
 
-@use './modules/index';
+/* 変数 */
+:root {
+  --primary: #ff953a;
+  --darkgray: #222222;
+  --midgray: #414141;
+  --gray: #888888;
+  --white: #ffffff;
+
+  --side: 50px;
+}
+
+body {
+  color: var(--darkgray);
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.8;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.btn {
+  background: #990000;
+  border-radius: 20px;
+  color: white;
+}
+
+.menu-bar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-bar ul li {
+  list-style-type: none;
+}
+
+.fv {
+  background-image: url(../img/トップ.svg);
+  background-position: center;
+  background-size: cover;
+  height: 396px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+
+  padding-top: 129px;
+  padding-left: 275px;
+  display: flex;
+}
+
+.fv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 396px;
+  width: 100%;
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.fv .text {
+  width: 576px;
+  z-index: 1;
+}
+
+.fv h1 {
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #ffffff;
+  line-height: 69px;
+}
+
+.fv p {
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #e4bc2e;
+  margin-left: 39px;
+}
