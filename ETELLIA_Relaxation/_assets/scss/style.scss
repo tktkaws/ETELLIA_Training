@@ -96,3 +96,51 @@ body {
   color: #e4bc2e;
   margin-left: 39px;
 }
+
+.menu {
+  background-color: black;
+  height: 350px;
+  padding-top: 50px;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu ul li {
+  background-image: url(../img/リンクsalon.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 0;
+}
+
+.menu ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.menu ul li p {
+  display: inline-block;
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  font-size: 48px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.menu ul li p span {
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.25);
+}
