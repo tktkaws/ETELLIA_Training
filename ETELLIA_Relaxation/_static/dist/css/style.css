@@ -513,4 +513,55 @@ body {
 .menu ul li p span {
   -webkit-text-stroke: 2px rgba(0, 0, 0, 0.25);
 }
+
+.middle-image img {
+  height: 305px;
+  width: 100%;
+}
+
+.reserve {
+  background-color: black;
+  height: 350px;
+  padding-top: 50px;
+}
+
+.reserve h2 {
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.reserve p {
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  width: 586px;
+  margin: 0 auto;
+}
+
+.reserve .btn {
+  background: #990000;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 100px;
+  margin-top: 48px;
+  margin-left: 294px;
+  margin-right: 294px;
+}
+
+.reserve .btn span {
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
 /*# sourceMappingURL=style.css.map */
